@@ -1,0 +1,17 @@
+
+"$schema" = "node_modules/wrangler/config-schema.json"
+name = "dexcelerate-v4-workers"
+# pages_build_output_dir = "./dist"
+main = ".output/server/index.mjs"
+compatibility_date = "2025-07-28"
+compatibility_flags = ["nodejs_compat"]
+
+
+[observability]
+enabled = true
+
+[assets]
+directory = "./.output/public/"
+
+[placement]
+mode = "smart"
