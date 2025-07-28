@@ -1,0 +1,90 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.0.0-beta.2/schema.json",
+    "vcs": {
+      "enabled": false,
+      "clientKind": "git",
+      "useIgnoreFile": false
+    },
+    "files": {
+      "ignoreUnknown": false,
+      "includes": [
+        "**",
+        "!**/src/routeTree.gen.ts",
+        "!**/docs",
+        "!**/src/hooks/useRafCallback.ts",
+        "!**/src/hooks/useUnmountEffect.ts",
+        "!**/src/hooks/useSyncedRef.ts",
+        "!**/src/hooks/useDebouncedCallback.ts",
+        "!**/src/hooks/useFirstMountState.ts",
+        "!**/src/hooks/useRafState.ts.ts",
+        "!**/src/hooks/useMountEffect.ts",
+        "!**/node_modules/**"
+      ]
+    },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "formatWithErrors": true
+    },
+    "assist": {
+      "actions": {
+        "source": {
+          "organizeImports": "on"
+        }
+      }
+    },
+    "linter": {
+      "enabled": true,
+      "rules": {
+        "recommended": true,
+        "suspicious": {
+          "noConstEnum": "off",
+          "noArrayIndexKey": "off"
+        },
+        "a11y": {
+          "useButtonType": "off"
+        },
+        "style": {
+          "noNonNullAssertion": "off",
+          "useTemplate": "off",
+          "useLiteralEnumMembers": "error",
+          "noCommaOperator": "error",
+          "useNodejsImportProtocol": "error",
+          "useAsConstAssertion": "error",
+          "useNumericLiterals": "error",
+          "useEnumInitializers": "error",
+          "useSelfClosingElements": "error",
+          "useConst": "error",
+          "useSingleVarDeclarator": "error",
+          "noUnusedTemplateLiteral": "error",
+          "useNumberNamespace": "error",
+          "noInferrableTypes": "error",
+          "useExponentiationOperator": "error",
+          "noParameterAssign": "error",
+          "useDefaultParameterLast": "error",
+          "noArguments": "error",
+          "useImportType": "off",
+          "useExportType": "error",
+          "noUselessElse": "error",
+          "useShorthandFunctionType": "error"
+        },
+        "complexity": {
+          "noForEach": "off",
+          "noStaticOnlyClass": "off"
+        },
+        "correctness": {
+          "useHookAtTopLevel": "error",
+          "noUnusedImports": {
+            "level": "info",
+            "fix": "safe"
+          },
+          "useExhaustiveDependencies": "error"
+        }
+      }
+    },
+    "javascript": {
+      "formatter": {
+        "quoteStyle": "double"
+      }
+    }
+  }

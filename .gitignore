@@ -139,3 +139,36 @@ dist
 .tanstack
 
 data-entry/data.json
+
+node_modules
+package-lock.json
+
+.DS_Store
+dist
+dist-ssr
+*.local
+.idea
+.qodo
+.vercel
+.clinerules
+.cursor/*
+specific_rule_files/*
+docs/*
+tasks/*
+architecture.md
+product_requirement_docs.md
+technical.md
+.vinxi
+# Sentry Config File
+.env.sentry-build-plugin
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.netlify
+dist
+app.config.*.js
+.wrangler
+.output
+.windsurfrules
+CLAUDE.md
