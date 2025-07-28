@@ -1,6 +1,6 @@
 
 "$schema" = "node_modules/wrangler/config-schema.json"
-name = "dexcelerate-v4-workers"
+name = "devinxi-test"
 # pages_build_output_dir = "./dist"
 main = ".output/server/index.mjs"
 compatibility_date = "2025-07-28"
